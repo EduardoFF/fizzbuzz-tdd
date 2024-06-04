@@ -1,7 +1,7 @@
 def process(n):
-    if n == 1:
-        return 1
-    return 42
+    if n % 3 == 0:
+        return "Fizz"
+    return n
 
 def fizzbuzz():
     for number in range(1, 101):
