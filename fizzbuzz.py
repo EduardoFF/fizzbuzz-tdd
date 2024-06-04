@@ -7,6 +7,10 @@ def process(n):
         return "Buzz"
     return n
 
+def get_fizzbuzz_list():
+    return [process(i) for i in range(1, 101)]
+
 def fizzbuzz():
+    L = get_fizzbuzz_list()
     for number in range(1, 101):
-        print(process(number))
+        print(L[i])
