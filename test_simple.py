@@ -16,6 +16,17 @@ def test_multiples_of_five():
     assert process(5) == "Buzz"
     assert process(10) == "Buzz"
 
+def test_numbers_with_digit_three():
+    assert process(23) == 'Fizz'
+    assert process(31) == 'Fizz'
+    assert process(32) == 'Fizz'
+    assert process(38) == 'Fizz'
+    assert process(39) == 'Fizz'
+
+def test_multiple_of_5_digit_three():
+    assert process(30) == 'FizzBuzz'
+    assert process(35) == 'FizzBuzz'
+
 def test_multiples_of_3_and_5():
     assert process(15) == "FizzBuzz"
     assert process(30) == "FizzBuzz"
@@ -32,4 +43,4 @@ def test_fizzbuzz_list_has_len_100():
 
 def test_fizzbuzz_list_first_15():
     L = get_fizzbuzz_list()
-    assert L[:15] == [1,2,'Fizz',4,'Buzz','Fizz',7,8,'Fizz','Buzz',11,'Fizz',13,14,'FizzBuzz']
+    assert L[:15] == [1,2,'Fizz',4,'Buzz','Fizz',7,8,'Fizz','Buzz',11,'Fizz','Fizz',14,'FizzBuzz']

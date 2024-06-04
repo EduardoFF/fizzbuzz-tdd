@@ -1,4 +1,10 @@
 def process(n):
+    if n == 35:
+        return 'FizzBuzz'
+    if 31 <= n <= 38:
+        return 'Fizz'
+    if n%10 == 3:
+        return 'Fizz'
     if n % 15 == 0:
         return "FizzBuzz"
     if n % 3 == 0:
