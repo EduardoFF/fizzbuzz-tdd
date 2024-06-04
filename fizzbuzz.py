@@ -13,4 +13,4 @@ def get_fizzbuzz_list():
 def fizzbuzz():
     L = get_fizzbuzz_list()
     for number in range(1, 101):
-        print(L[i])
+        print(L[number])
