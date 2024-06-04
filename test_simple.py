@@ -14,3 +14,8 @@ def test_multiples_of_three():
 def test_multiples_of_five():
     assert process(5) == "Buzz"
     assert process(10) == "Buzz"
+
+def test_multiples_of_3_and_5():
+    assert process(15) == "FizzBuzz"
+    assert process(30) == "FizzBuzz"
+    assert process(45) == "FizzBuzz"
