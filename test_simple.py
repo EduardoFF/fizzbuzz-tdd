@@ -5,3 +5,8 @@ def test_process_42():
 
 def test_process_1():
     assert( process(1) == 1)
+
+def test_multiples_of_three():
+    assert process(3) == "Fizz"
+    assert process(4) != "Fizz"
+    assert process(33) == "Fizz"
